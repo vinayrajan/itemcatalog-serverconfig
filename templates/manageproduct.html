@@ -44,7 +44,7 @@
                 <td><img src="{{ p[0].pic2 }}" class="img-thumbnail" style="max-width: 100px;" ></td>
                 <td>
                     {% if p[0].created_by ==session['user_id']  %}
-                        <a data-toggle="tooltip" title="Edit this Product " type="button" class="btne btn btn-primary btn-sm" href="/editProduct/{{p[0].title}}-{{p[0].id}}.html"><i class="fa fa-pencil"></i></a>
+                        <a data-toggle="tooltip" title="Edit this Product " type="button" class="btne btn btn-primary btn-sm" href="/catalog/editProduct/{{p[0].title}}-{{p[0].id}}.html"><i class="fa fa-pencil"></i></a>
                         <button data-toggle="tooltip" title="Delete this Product " type="button" class="btnd btn btn-danger btn-sm" data-created_by="{{p[0].created_by}}" data-id="{{p[0].id}}" data-name="{{p[0].title}}"><i class="fa fa-trash"></i> </button>
                     {% else %}
                         <p class="text-muted">You are not authorized to edit this item</p>

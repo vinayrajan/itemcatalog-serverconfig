@@ -32,7 +32,7 @@ CLIENT_ID = json.loads(
 # engine = dbsetup.create_engine('sqlite:///itemcatalog.db')
 
 engine = dbsetup.create_engine(
-    'postgresql://catalog:password@localhost/catalog')
+    'postgresql://catalog:catalog@localhost/catalog')
 conn = engine.connect()
 # Base.metadata.bind = engine
 DBSession = sessionmaker(bind=engine)
